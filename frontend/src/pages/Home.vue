@@ -8,6 +8,7 @@
 
     <p v-if="isUserConnected">
       <strong>Your current chain:</strong> {{getChainName}}
+      <strong>Your account:</strong> {{getActiveAccount}}
     </p>
 
     <router-link v-if="isUserConnected" to="/set-value">
@@ -22,7 +23,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "Home",
   computed: {
-    ...mapGetters("accounts", ["getChainName", "isUserConnected"]),
+    ...mapGetters("accounts", ["getChainName", "isUserConnected", "getActiveAccount"]),
   },
 }
 </script>
