@@ -3,7 +3,7 @@ import Calc from "../../contracts/Calc.json";
 import addresses from "../../contracts/addresses.json";
 
 const state = {
-  num: 0,
+  num: 10,
   calcAbi: null,
   calcAddress: null
 };

@@ -11,7 +11,7 @@ describe("Calc contract", function() {
 
   it("gets the num value before a set function is called", async function() {
     const numValue = await calcInstance.getNum();
-    expect(numValue).to.equal(0);
+    expect(numValue).to.equal(10);
   });
 
   it("set the new num value and check if it changed", async function() {

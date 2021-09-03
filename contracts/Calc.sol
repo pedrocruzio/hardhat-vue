@@ -2,7 +2,7 @@
 pragma solidity =0.7.3;
 
 contract Calc {
-    uint private num = 0;
+    uint private num = 10;
 
     event NumberSet(address _from, uint value);
 
